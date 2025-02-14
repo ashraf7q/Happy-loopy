@@ -1,0 +1,240 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    background-color: #2d3436;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #fdcb6e;
+}
+
+/* Main Section */
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+/* Page-specific Sections */
+.login-section, .signup-section, .dashboard-section {
+    background: white;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    margin: 2rem auto;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.login-section:hover, .signup-section:hover {
+    transform: translateY(-5px);
+}
+
+/* Title for each page */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2d3436;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+form input:focus {
+    border: 1px solid hsl(212, 97%, 71%);
+    outline: none;
+}
+
+form button {
+    background-color: #6ebdfd;
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e17055;
+}
+
+/* Text and Links */
+p {
+    font-size: 1rem;
+    color: #777;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fdcb6e;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e17055;
+}
+
+/* Dashboard Page */
+.dashboard-section {
+    text-align: center;
+}
+
+.dashboard-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #2d3436;
+}
+
+.dashboard-section p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.dashboard-section a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #2d3436;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-section a:hover {
+    background-color: #fdcb6e;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .login-section, .signup-section, .dashboard-section {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    form input, form button {
+        font-size: 1rem;
+    }
+
+    .dashboard-section p {
+        font-size: 1rem;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .login-section, .signup-section, .dashboard-section {
+        width: 80%;
+        padding: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+}
+.cta-btn {
+    display: inline-block;
+    background-color: #fd6e6e;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-align: center;
+    margin: 1rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #5576e1;
+}
